@@ -15,6 +15,9 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
 
+      - name: Debug AWS_ACCOUNT_ID
+        run: echo "AWS_ACCOUNT_ID=${{ secrets.AWS_ACCOUNT_ID }}"
+
       - name: Login to AWS ECR
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
