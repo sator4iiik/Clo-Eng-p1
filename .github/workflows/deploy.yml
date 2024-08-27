@@ -46,4 +46,3 @@ jobs:
           script: |
             docker pull $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:latest
             docker-compose up -d
-	  debug: true
