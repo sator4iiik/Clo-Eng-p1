@@ -51,7 +51,7 @@ jobs:
             echo "Checking for docker-compose file..."
             ls -l /home/ubuntu/Clo-Eng-p1/docker-compose.yml
             echo "Deploying with Docker Compose..."
-            docker-compose -f /path/to/your/docker-compose.yml up -d
+            docker-compose -f /home/ubuntu/Clo-Eng-p1/docker-compose.yml up -d
         env:
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
